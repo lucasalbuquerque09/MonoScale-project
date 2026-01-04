@@ -334,7 +334,7 @@ button:hover{
 }
 
 .sobre-container .sobre i{
-    background-color: rgba(255, 255, 0, 0.219);
+    background-color: rgba(255, 255, 0, 0.342);
     width: fit-content;
     font-size: 2rem;
     padding: 10px;
@@ -523,6 +523,9 @@ button:hover{
         flex-direction: column;
         gap: 50px;
     }
+    .sobre-container .sobre:hover{
+        transform: translatey(0);
+    }
     
     .rodape .interface{
         display: flex;
@@ -594,6 +597,9 @@ button:hover{
     }
     .sobre-container .sobre p{
         text-align: center;
+    }
+    .sobre-container .sobre:hover{
+        transform: translatey(0);
     }
 
     .form-container{
