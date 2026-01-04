@@ -236,6 +236,7 @@ button:hover{
 .text-main-introduction p{
     text-align: center;
     font-size: 19px;
+    line-height: 1.5em;
     color: #00000091;
     margin-bottom: 40px;
 }
@@ -334,7 +335,7 @@ button:hover{
 }
 
 .sobre-container .sobre i{
-    background-color: rgba(255, 255, 0, 0.342);
+    background-color: hsla(49, 100%, 51%, 0.308);
     width: fit-content;
     font-size: 2rem;
     padding: 10px;
@@ -595,6 +596,9 @@ button:hover{
         align-items: center;
         padding: 20px;
     }
+    .sobre-container .sobre p br{
+        display: none;
+    }
     .sobre-container .sobre p{
         text-align: center;
     }
@@ -620,7 +624,7 @@ button:hover{
         flex-direction: column;
     }
     .form-container form #message-form{
-         display: flex;
+        display: flex;
         flex-direction: column;
         width: calc(100% - 10px);
         gap: 10px;
@@ -639,6 +643,7 @@ button:hover{
     } 
     .footer-nav ul{
         gap: 10px;
+        flex-direction: column;
     }
     
 }
