@@ -32,7 +32,7 @@ button:hover{
     width: 100vw;
     background-color: #fff;
     padding: 10px 0;
-    border-bottom: 1px solid hsla(49, 100%, 51%, 0.233);
+    border-bottom: 1px solid hsla(49, 100%, 51%, 0.336);
     z-index: 2;
 }
 .cabecalho .interface{
@@ -288,7 +288,7 @@ button:hover{
 }
 .text-container{
     padding-bottom: 40px;
-    border-bottom: 1px solid hsla(49, 100%, 51%, 0.233);
+    border-bottom: 1px solid hsla(49, 100%, 51%, 0.336);
 }
 .text-container h2{
     font-size: 2rem;
@@ -328,7 +328,7 @@ button:hover{
     gap: 20px;
     cursor: pointer;
     transition: transform 0.3s;
-    border: 1px solid hsla(49, 100%, 51%, 0.233);
+    border: 1px solid hsla(49, 100%, 51%, 0.336);
     padding: 50px 0 20px 20px;
     border-radius: 50px;
 }
@@ -384,7 +384,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid hsla(49, 100%, 51%, 0.233);
+    border: 1px solid hsla(49, 100%, 51%, 0.623);
     border-radius: 30px;
     gap: 40px;
 }
@@ -409,7 +409,7 @@ button:hover{
     border-radius: 30px;
     height: 50px;
     padding: 0 15px;
-    border: 1px solid hsla(49, 100%, 51%, 0.233);
+    border: 1px solid hsla(49, 100%, 51%, 0.336);
     font-size: 16px;
     outline: none;
 }
@@ -424,7 +424,7 @@ button:hover{
 .form-container form .input-group textarea{
     border-radius: 20px;
     padding: 15px;
-    border: 1px solid hsla(49, 100%, 51%, 0.233);
+    border: 1px solid hsla(49, 100%, 51%, 0.336);
     font-size: 16px;
     outline: none;
     resize: none;
@@ -474,7 +474,7 @@ button:hover{
 .rodape{
     width: 100%;
     margin-top: 150px;
-    border-top: 1px solid hsla(49, 100%, 51%, 0.233);
+    border-top: 1px solid hsla(49, 100%, 51%, 0.623);
 }
 .rodape .interface{
     display: flex;
