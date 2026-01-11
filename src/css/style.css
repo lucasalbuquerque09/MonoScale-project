@@ -180,6 +180,26 @@ button:hover{
     transform: scale(1.02);
     transition: .5s ease;
 }
+/* menu toggle */
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    gap: 5px;
+}
+.menu-toggle:hover{
+    background-color: #fff;
+}
+.menu-toggle .bar{
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+/* fim menu toggle */
 /* fim header */
 
 /* main */
@@ -510,6 +530,8 @@ button:hover{
     font-size: 14px;
     color: #00000073;
 }
+
+
 /* fim footer */
 /* media query tablet */
 @media screen and (max-width: 1024px) and (min-width: 768px){
@@ -549,8 +571,70 @@ button:hover{
     .cabecalho .interface{
         width: 100%;
     }
-    .header-nav ul{
+    .header-btn{
         display: none;
+    }
+    .menu-toggle{
+        display: flex;
+    }
+    .nav-menu{
+        position: absolute;
+        right: -100%;
+        top: 40px;
+        background-color: #333;
+        flex-direction: column;
+        width: 70%;
+        height: 100vh;
+        text-align: center;
+        transition: right 0.5s ease-in-out;
+        padding: 2rem 0;
+        gap: 1rem;
+        opacity: 0.95;
+    }
+    .nav-menu li{
+        margin: 1rem 0;
+    }
+    .header-nav ul li a:hover{
+        color: #fff;
+        text-decoration: underline yellow 2px;
+    }
+    .header-nav ul li:nth-child(1):hover::after{
+        width: 0%;
+    }
+    .header-nav ul li:nth-child(1):hover::before{
+        height: 0%;
+    }
+    .header-nav ul li:nth-child(2):hover::after{
+        width: 0%;
+    }
+    .header-nav ul li:nth-child(2):hover::before{
+        height: 0%;
+    }
+    .header-nav ul li:nth-child(3):hover::after{
+        width: 0%;
+    }
+    .header-nav ul li:nth-child(3):hover::before{
+        height: 0%;
+    }
+    .header-nav ul li a{
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    
+    .nav-menu.active{
+        right: 0;
+    }
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
     }
     .wrapper .interface{
         width: calc(100% - 20px);
